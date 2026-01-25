@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(182, 143, 143);
+}
+
+.bg-amarelo {
+  background-color: yellow;
+  
+}
+
+.bg-vermelho {
+  background-color: red;
+}
+
+.bg-azul {
+  background-color: blue;
+}
+
+.amarelo{
+background-color: yellow;
+}
+
+.vermelho{
+background-color: red;
+}
+
+.azul{
+background-color: blue;
+}
