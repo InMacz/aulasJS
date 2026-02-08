@@ -1,0 +1,35 @@
+body {
+    background: black;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.texto {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #d40eaf; /* cor do texto revelado */
+    
+    /* TEXTO INVISÍVEL */
+    -webkit-mask-image: radial-gradient(
+        circle 120px at var(--x, -200px) var(--y, -200px),
+        #fff 0%,
+        transparent 70%
+    );
+    mask-image: radial-gradient(
+        circle 120px at var(--x, -200px) var(--y, -200px),
+        #fff 0%,
+        transparent 70%
+    );
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    cursor:default;
+ user-select: none;
+    
+}
+
