@@ -40,7 +40,7 @@ ValidaCPF.prototype.isSequencia = function (){
     const sequencia =  this.cpfLimpo[0].repeat(this.cpfLimpo.length);
     return sequencia === this.cpfLimpo;
 };
-const cpf = new ValidaCPF('111.111.111-11');
+const cpf = new ValidaCPF('511.678.058-95');
 console.log(cpf.valida());
 
 if(cpf.valida()){
