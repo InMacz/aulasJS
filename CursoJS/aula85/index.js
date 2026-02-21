@@ -25,7 +25,7 @@ criaDigito(cpf){
     verificaCPF(){
         if (!this.cpfLimpo) return false;
         if (this.cpfLimpo.length !== 11)return false;
-        
+        if (this.eSequencia()) return false;
         const cpfParcial = this.cpfLimpo.slice(0, -2);
         const digito1 = this.criaDigito(cpfParcial);
         const digito2 = this.criaDigito(cpfParcial + digito1);
@@ -38,8 +38,12 @@ criaDigito(cpf){
     novoCPF(){
     return this.cpfParcial + this.digito1 + this.digito2;
     } 
+
+    eSequencia(){
+        return this.cpfLimpo.charAt(0).repeat(11) === this.cpfLimpo;
+    }
 }
 
-const cpf1 = new ValidaCPF("511.678.058-95");
+const cpf1 = new ValidaCPF("111.111.111-11");
 
 console.log(cpf1.verificaCPF() ? 'CPF VÁLIDO' : 'CPF INVÁLIDO');
